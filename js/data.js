@@ -1,0 +1,140 @@
+// Данные магазина: массив товаров и названия категорий.
+// У всех товаров одинаковый набор свойств, цены записаны числами.
+
+const products = [
+  {
+    id: 1,
+    title: 'Polar FT4',
+    category: 'fitness',
+    brand: 'Polar',
+    price: 7021,
+    oldPrice: 7390,
+    isAvailable: true,
+    isPopular: true,
+    image: 'polar-ft4',
+    imageWidth: 403,
+    imageHeight: 640,
+    description: 'Улучшенная версия FT1: считает калории, подсказывает целевые зоны пульса и хранит историю тренировок.',
+    features: ['Зоны пульса', 'Калории', 'WR30'],
+    badges: [{ type: 'hit', text: 'Хит' }, { type: 'sale', text: '−5%' }]
+  },
+  {
+    id: 2,
+    title: 'Polar FT1',
+    category: 'fitness',
+    brand: 'Polar',
+    price: 4500,
+    oldPrice: 4750,
+    isAvailable: true,
+    isPopular: true,
+    image: 'polar-ft1',
+    imageWidth: 371,
+    imageHeight: 640,
+    description: 'Для первых шагов в тренировках по пульсу: показывает ЧСС и сигналит при выходе из целевой зоны.',
+    features: ['Нагрудный датчик', 'WR30'],
+    badges: [{ type: 'sale', text: '−5%' }]
+  },
+  {
+    id: 3,
+    title: 'Suunto M2',
+    category: 'fitness',
+    brand: 'Suunto',
+    price: 6641,
+    oldPrice: 6990,
+    isAvailable: true,
+    isPopular: false,
+    image: 'suunto-m2',
+    imageWidth: 480,
+    imageHeight: 640,
+    description: 'Пульсометр начального уровня с комфортным ремешком и понятным крупным экраном.',
+    features: ['Зоны пульса', 'Калории'],
+    badges: [{ type: 'sale', text: '−5%' }]
+  },
+  {
+    id: 4,
+    title: 'Polar M400',
+    category: 'running',
+    brand: 'Polar',
+    price: 14990,
+    oldPrice: null,
+    isAvailable: true,
+    isPopular: true,
+    image: 'polar-m400',
+    imageWidth: 640,
+    imageHeight: 495,
+    description: 'GPS-часы для бега: темп, дистанция, пульс и планы тренировок в приложении Polar Flow.',
+    features: ['GPS', 'Пульс', 'WR30'],
+    badges: [{ type: 'hit', text: 'Хит' }]
+  },
+  {
+    id: 5,
+    title: 'Polar M600',
+    category: 'running',
+    brand: 'Polar',
+    price: 24990,
+    oldPrice: null,
+    isAvailable: true,
+    isPopular: true,
+    image: 'polar-m600',
+    imageWidth: 640,
+    imageHeight: 360,
+    description: 'Умные спортивные часы с оптическим датчиком пульса на запястье, GPS и музыкой.',
+    features: ['GPS', 'Пульс на запястье', 'WR10'],
+    badges: [{ type: 'new', text: 'Новинка' }]
+  },
+  {
+    id: 6,
+    title: 'Polar RC3 GPS',
+    category: 'running',
+    brand: 'Polar',
+    price: 12490,
+    oldPrice: null,
+    isAvailable: false,
+    isPopular: false,
+    image: 'polar-rc3',
+    imageWidth: 640,
+    imageHeight: 450,
+    description: 'Лёгкие часы со встроенным GPS для бега и велотренировок, до 12 часов в режиме GPS.',
+    features: ['GPS', 'Велорежим'],
+    badges: []
+  },
+  {
+    id: 7,
+    title: 'Suunto Dual Comfort Belt',
+    category: 'sensors',
+    brand: 'Suunto',
+    price: 5990,
+    oldPrice: null,
+    isAvailable: true,
+    isPopular: false,
+    image: 'suunto-dual-belt',
+    imageWidth: 525,
+    imageHeight: 296,
+    description: 'Нагрудный датчик пульса с мягким текстильным ремнём, работает на суше и в воде.',
+    features: ['Bluetooth + ANT+', 'Для плавания'],
+    badges: []
+  },
+  {
+    id: 8,
+    title: 'Комплект Polar FT1',
+    category: 'sensors',
+    brand: 'Polar',
+    price: 5290,
+    oldPrice: null,
+    isAvailable: true,
+    isPopular: false,
+    image: 'polar-ft1-kit',
+    imageWidth: 522,
+    imageHeight: 420,
+    description: 'Пульсометр FT1 с нагрудным ремнём и запасной батарейкой — всё для старта в одной коробке.',
+    features: ['Готовый набор'],
+    badges: [{ type: 'new', text: 'Новинка' }]
+  }
+];
+
+// Ключи совпадают со значениями option в фильтре каталога
+const categoryNames = {
+  fitness: 'Для фитнеса',
+  running: 'Для бега',
+  sensors: 'Датчики и комплекты'
+};
