@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заявка отправлена — RunSmart</title>
+  <meta name="description" content="Спасибо за заявку в RunSmart! Менеджер перезвонит в течение 10 минут.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo site-header__logo" href="index.html">
+        <img class="logo__mark" src="images/favicon.svg" alt="" width="36" height="36">
+        <span>Run<span class="logo__accent">Smart</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="delivery.html">Доставка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="cart.html">Корзина <span class="cart-counter cart-counter--empty" data-cart-counter>0</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__phone" href="tel:+74999228974">+7 (499) 922-89-74</a>
+        <a class="button button--small" href="#callback-modal">Заказать звонок</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <section class="section" aria-labelledby="thanks-title">
+      <div class="container">
+        <div class="status">
+          <p class="status__icon" aria-hidden="true">✓</p>
+          <h1 class="status__title" id="thanks-title">Спасибо, заявка принята!</h1>
+          <p class="status__text">Менеджер свяжется с вами в течение 10 минут в рабочее время (10:00–21:00). Если ошиблись в номере телефона, позвоните нам: <a href="tel:+74999228974">+7 (499) 922-89-74</a>.</p>
+          <ol class="steps steps--vertical status__steps">
+            <li class="steps__item"><h2 class="steps__title">Звонок менеджера</h2><p class="steps__text">Уточним модель, цвет и удобный способ получения.</p></li>
+            <li class="steps__item"><h2 class="steps__title">Доставка или самовывоз</h2><p class="steps__text">По Москве — уже завтра, в магазине — сегодня.</p></li>
+            <li class="steps__item"><h2 class="steps__title">Настройка</h2><p class="steps__text">Поможем ввести параметры и настроить зоны пульса.</p></li>
+          </ol>
+          <div class="status__actions">
+            <a class="button" href="catalog.html">Вернуться в каталог</a>
+            <a class="button button--outline" href="index.html">На главную</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <section aria-labelledby="footer-about">
+        <h2 class="visually-hidden" id="footer-about">О магазине</h2>
+        <a class="logo logo--inverse" href="index.html">
+          <img class="logo__mark" src="images/favicon.svg" alt="" width="36" height="36" loading="lazy">
+          <span>Run<span class="logo__accent">Smart</span></span>
+        </a>
+        <p class="site-footer__about">Подбираем пульсометры и спортивные часы под уровень подготовки и цели. Официальный представитель Polar и Suunto.</p>
+      </section>
+
+      <nav aria-labelledby="footer-shop">
+        <h2 class="site-footer__title" id="footer-shop">Магазин</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="catalog.html">Весь каталог</a></li>
+          <li><a class="site-footer__link" href="catalog.html?category=fitness">Для фитнеса</a></li>
+          <li><a class="site-footer__link" href="catalog.html?category=running">Для бега</a></li>
+          <li><a class="site-footer__link" href="catalog.html?category=sensors">Датчики и комплекты</a></li>
+          <li><a class="site-footer__link" href="delivery.html">Доставка и оплата</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-home">
+        <h2 class="site-footer__title" id="footer-home">На главной</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+          <li><a class="site-footer__link" href="index.html#reviews">Отзывы</a></li>
+          <li><a class="site-footer__link" href="index.html#contacts">Адрес и телефон</a></li>
+          <li><a class="site-footer__link" href="contacts.html#faq">Вопросы и ответы</a></li>
+        </ul>
+      </nav>
+
+      <section aria-labelledby="footer-contacts">
+        <h2 class="site-footer__title" id="footer-contacts">Связаться с нами</h2>
+        <address class="site-footer__contacts">
+          <span>Москва, Мясницкий проезд, 3с1</span>
+          <a class="site-footer__link" href="tel:+74999228974">+7 (499) 922-89-74</a>
+          <a class="site-footer__link" href="mailto:hello@runsmart.example">hello@runsmart.example</a>
+        </address>
+        <ul class="socials">
+          <li><a class="socials__link" href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img class="socials__icon" src="images/icons/social-telegram.svg" alt="" width="20" height="20"></a></li>
+          <li><a class="socials__link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img class="socials__icon" src="images/icons/social-youtube.svg" alt="" width="20" height="20"></a></li>
+          <li><a class="socials__link" href="mailto:hello@runsmart.example" aria-label="Написать на почту"><img class="socials__icon" src="images/icons/social-mail.svg" alt="" width="20" height="20"></a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p>© 2026 RunSmart. Учебный проект, магазин вымышленный.</p>
+        <p>КР №3 · Маркосян Гарегин, ЭФБО-01-25</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="page-up" href="#top" aria-label="Наверх страницы">
+    <img class="page-up__icon" src="images/icons/arrow-up.svg" alt="" width="22" height="22">
+  </a>
+
+  <!-- CSS-модалка: открывается ссылкой на #callback-modal (псевдокласс :target),
+       закрывается ссылкой на несуществующий якорь #close — без JavaScript -->
+  <div class="modal" id="callback-modal" role="dialog" aria-modal="true" aria-labelledby="callback-title">
+    <a class="modal__overlay" href="#close" tabindex="-1" aria-hidden="true" data-modal-close></a>
+    <div class="modal__window">
+      <a class="modal__close" href="#close" aria-label="Закрыть окно" data-modal-close>&times;</a>
+      <h2 class="modal__title" id="callback-title">Заказать звонок</h2>
+      <p class="modal__text">Оставьте номер — перезвоним в течение 10 минут и поможем подобрать пульсометр.</p>
+      <form class="form form--compact" action="thanks.html" method="get">
+        <div class="form__grid">
+          <div class="form__field">
+            <label class="form__label" for="callback-name">Имя <abbr class="form__required" title="обязательное поле">*</abbr></label>
+            <input class="form__input" id="callback-name" name="name" type="text" autocomplete="name" minlength="2" required placeholder="Как к вам обращаться">
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="callback-phone">Телефон <abbr class="form__required" title="обязательное поле">*</abbr></label>
+            <input class="form__input" id="callback-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9 +\(\)\-]{10,18}" required placeholder="+7 (999) 123-45-67" aria-describedby="callback-phone-error">
+            <p class="form__error" id="callback-phone-error">Введите номер из 10–18 цифр</p>
+          </div>
+        </div>
+        <label class="form__checkbox-label">
+          <input class="form__checkbox" name="agree" type="checkbox" required>
+          Согласен на обработку персональных данных
+        </label>
+        <button class="button button--block" type="submit">Жду звонка</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

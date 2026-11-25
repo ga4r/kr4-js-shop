@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RunSmart — подбор пульсометров для бега и фитнеса</title>
+  <meta name="description" content="Магазин пульсометров RunSmart: подбор модели Polar и Suunto под ваш уровень подготовки, бесплатная доставка и консультация.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo site-header__logo" href="index.html">
+        <img class="logo__mark" src="images/favicon.svg" alt="" width="36" height="36">
+        <span>Run<span class="logo__accent">Smart</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="delivery.html">Доставка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="cart.html">Корзина <span class="cart-counter cart-counter--empty" data-cart-counter>0</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__phone" href="tel:+74999228974">+7 (499) 922-89-74</a>
+        <a class="button button--small" href="#callback-modal">Заказать звонок</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__label">Официальный представитель Polar и Suunto</p>
+          <h1 class="hero__title" id="hero-title">Подбор пульсометра</h1>
+          <p class="hero__subtitle">С учётом вашего уровня подготовки и целей тренировок</p>
+          <ul class="hero__features">
+            <li class="hero__feature"><img class="hero__feature-icon" src="images/icons/feature-time.svg" alt="" width="42" height="46">Подбор за 10 минут</li>
+            <li class="hero__feature"><img class="hero__feature-icon" src="images/icons/feature-delivery.svg" alt="" width="42" height="46">Бесплатная доставка</li>
+            <li class="hero__feature"><img class="hero__feature-icon" src="images/icons/feature-support.svg" alt="" width="42" height="46">Ответим на все вопросы</li>
+          </ul>
+          <div class="hero__actions">
+            <a class="button button--large" href="#callback-modal">Заказать консультацию</a>
+            <a class="hero__link" href="catalog.html">или перейти в каталог →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="advantages" aria-labelledby="advantages-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="advantages-title">Наши преимущества</h2>
+          <p class="section__lead">Мы сами бегаем и знаем, какой пульсометр нужен на каждом этапе.</p>
+        </header>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img class="advantages__icon" src="images/icons/adv-cup.svg" alt="" width="70" height="70">
+            <h3 class="advantages__title">Делимся опытом</h3>
+            <p class="advantages__text">Наши сотрудники бегают полумарафоны, переплыли Босфор и готовятся к триатлону — подскажут по делу.</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__icon" src="images/icons/adv-heart.svg" alt="" width="70" height="70">
+            <h3 class="advantages__title">Заботимся о здоровье</h3>
+            <p class="advantages__text">Тренировки по пульсу идут на пользу сердцу и не превращаются в изнурительную гонку.</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__icon" src="images/icons/adv-shoe.svg" alt="" width="70" height="70">
+            <h3 class="advantages__title">Учим бегать</h3>
+            <p class="advantages__text">Помогаем освоить правильную технику бега вместе с партнёрской беговой школой.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="popular" aria-labelledby="popular-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="popular-title">Популярные товары</h2>
+          <p class="section__lead">Модели, которые чаще всего выбирают наши покупатели.</p>
+        </header>
+        <!-- карточки выводит js/catalog.js (renderPopularProducts) -->
+        <ul class="product-grid product-grid--four" id="popular-list"></ul>
+        <div class="section__footer">
+          <a class="button button--outline" href="catalog.html">Смотреть весь каталог</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="steps" aria-labelledby="steps-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="steps-title">Как мы подбираем пульсометр</h2>
+        </header>
+        <ol class="steps">
+          <li class="steps__item">
+            <h3 class="steps__title">Оставляете заявку</h3>
+            <p class="steps__text">На сайте, по телефону или через кнопку «Заказать звонок».</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">Обсуждаем цели</h3>
+            <p class="steps__text">Консультант уточнит уровень подготовки, вид спорта и бюджет.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">Предлагаем 2–3 модели</h3>
+            <p class="steps__text">Объясняем разницу простыми словами, без маркетинга.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">Доставляем и настраиваем</h3>
+            <p class="steps__text">Привезём бесплатно и поможем настроить зоны пульса.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="reviews-title">Отзывы клиентов</h2>
+        </header>
+        <div class="reviews__list">
+        <article class="review-card">
+          <header class="review-card__header">
+            <img class="review-card__photo" src="images/reviews/irina.webp" alt="Фото: Ирина Иванченко" width="64" height="64" loading="lazy">
+            <div>
+              <h3 class="review-card__name">Ирина Иванченко</h3>
+              <p class="review-card__meta">2 полумарафона · купил(а) Polar FT4</p>
+            </div>
+          </header>
+          <p class="review-card__rating"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Оценка 5 из 5</span></p>
+          <p class="review-card__text">Не знала, что себе купить — обратилась в RunSmart. Подобрали пульсометр под мои цели и бюджет. Когда решила обновить гаджет, без раздумий пришла туда же. Новые цели — новый гаджет!</p>
+        </article>
+        <article class="review-card">
+          <header class="review-card__header">
+            <img class="review-card__photo" src="images/reviews/ivan.webp" alt="Фото: Иван Сёмочкин" width="64" height="64" loading="lazy">
+            <div>
+              <h3 class="review-card__name">Иван Сёмочкин</h3>
+              <p class="review-card__meta">1 полумарафон · купил(а) Polar M400</p>
+            </div>
+          </header>
+          <p class="review-card__rating"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Оценка 5 из 5</span></p>
+          <p class="review-card__text">Раньше бегал без пульсометра и, оказывается, только вредил себе. Вместе с часами получил в подарок тренировку: научили пользоваться гаджетом и составили план на месяц. С ними подготовился к первому полумарафону!</p>
+        </article>
+        <article class="review-card">
+          <header class="review-card__header">
+            <img class="review-card__photo" src="images/reviews/julia.webp" alt="Фото: Юлия Дашкина" width="64" height="64" loading="lazy">
+            <div>
+              <h3 class="review-card__name">Юлия Дашкина</h3>
+              <p class="review-card__meta">2 полумарафона · купил(а) Suunto M2</p>
+            </div>
+          </header>
+          <p class="review-card__rating"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Оценка 5 из 5</span></p>
+          <p class="review-card__text">Несколько раз бросала бег, потому что было тяжело. Друзья рассказали о беге с контролем пульса. Ребята расспросили о целях и подобрали вариант со скидкой. Теперь бегаю с удовольствием и не собираюсь останавливаться!</p>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta__inner">
+        <div>
+          <h2 class="cta__title" id="cta-title">Бесплатная консультация по подбору пульсометра</h2>
+          <p class="cta__text">Заполните короткую форму — перезвоним в течение 10 минут. Полная форма заявки находится на <a class="cta__link" href="order.html">странице оформления</a>.</p>
+        </div>
+        <form class="form form--compact cta__form" action="thanks.html" method="get">
+          <div class="form__grid">
+            <div class="form__field">
+              <label class="form__label" for="cta-name">Имя <abbr class="form__required" title="обязательное поле">*</abbr></label>
+              <input class="form__input" id="cta-name" name="name" type="text" autocomplete="name" minlength="2" required placeholder="Ваше имя">
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="cta-phone">Телефон <abbr class="form__required" title="обязательное поле">*</abbr></label>
+              <input class="form__input" id="cta-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9 +\(\)\-]{10,18}" required placeholder="+7 (999) 123-45-67">
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="cta-email">E-mail <abbr class="form__required" title="обязательное поле">*</abbr></label>
+              <input class="form__input" id="cta-email" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+            </div>
+          </div>
+          <label class="form__checkbox-label">
+            <input class="form__checkbox" name="agree" type="checkbox" required>
+            Согласен на обработку персональных данных
+          </label>
+          <button class="button button--block" type="submit">Получить консультацию</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="contacts-title">Контакты</h2>
+        </header>
+        <dl class="contacts-strip">
+          <div class="contacts-strip__item">
+            <dt class="contacts-strip__label">Адрес</dt>
+            <dd class="contacts-strip__value">Москва, Мясницкий проезд, 3с1</dd>
+          </div>
+          <div class="contacts-strip__item">
+            <dt class="contacts-strip__label">Телефон</dt>
+            <dd class="contacts-strip__value"><a href="tel:+74999228974">+7 (499) 922-89-74</a></dd>
+          </div>
+          <div class="contacts-strip__item">
+            <dt class="contacts-strip__label">E-mail</dt>
+            <dd class="contacts-strip__value"><a href="mailto:hello@runsmart.example">hello@runsmart.example</a></dd>
+          </div>
+          <div class="contacts-strip__item">
+            <dt class="contacts-strip__label">Режим работы</dt>
+            <dd class="contacts-strip__value">Ежедневно, 10:00–21:00</dd>
+          </div>
+        </dl>
+        <div class="section__footer">
+          <a class="button button--outline" href="contacts.html">Все контакты и обратная связь</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <section aria-labelledby="footer-about">
+        <h2 class="visually-hidden" id="footer-about">О магазине</h2>
+        <a class="logo logo--inverse" href="index.html">
+          <img class="logo__mark" src="images/favicon.svg" alt="" width="36" height="36" loading="lazy">
+          <span>Run<span class="logo__accent">Smart</span></span>
+        </a>
+        <p class="site-footer__about">Подбираем пульсометры и спортивные часы под уровень подготовки и цели. Официальный представитель Polar и Suunto.</p>
+      </section>
+
+      <nav aria-labelledby="footer-shop">
+        <h2 class="site-footer__title" id="footer-shop">Магазин</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="catalog.html">Весь каталог</a></li>
+          <li><a class="site-footer__link" href="catalog.html?category=fitness">Для фитнеса</a></li>
+          <li><a class="site-footer__link" href="catalog.html?category=running">Для бега</a></li>
+          <li><a class="site-footer__link" href="catalog.html?category=sensors">Датчики и комплекты</a></li>
+          <li><a class="site-footer__link" href="delivery.html">Доставка и оплата</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-home">
+        <h2 class="site-footer__title" id="footer-home">На главной</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+          <li><a class="site-footer__link" href="index.html#reviews">Отзывы</a></li>
+          <li><a class="site-footer__link" href="index.html#contacts">Адрес и телефон</a></li>
+          <li><a class="site-footer__link" href="contacts.html#faq">Вопросы и ответы</a></li>
+        </ul>
+      </nav>
+
+      <section aria-labelledby="footer-contacts">
+        <h2 class="site-footer__title" id="footer-contacts">Связаться с нами</h2>
+        <address class="site-footer__contacts">
+          <span>Москва, Мясницкий проезд, 3с1</span>
+          <a class="site-footer__link" href="tel:+74999228974">+7 (499) 922-89-74</a>
+          <a class="site-footer__link" href="mailto:hello@runsmart.example">hello@runsmart.example</a>
+        </address>
+        <ul class="socials">
+          <li><a class="socials__link" href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img class="socials__icon" src="images/icons/social-telegram.svg" alt="" width="20" height="20"></a></li>
+          <li><a class="socials__link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img class="socials__icon" src="images/icons/social-youtube.svg" alt="" width="20" height="20"></a></li>
+          <li><a class="socials__link" href="mailto:hello@runsmart.example" aria-label="Написать на почту"><img class="socials__icon" src="images/icons/social-mail.svg" alt="" width="20" height="20"></a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p>© 2026 RunSmart. Учебный проект, магазин вымышленный.</p>
+        <p>КР №3 · Маркосян Гарегин, ЭФБО-01-25</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="page-up" href="#top" aria-label="Наверх страницы">
+    <img class="page-up__icon" src="images/icons/arrow-up.svg" alt="" width="22" height="22">
+  </a>
+
+  <!-- CSS-модалка: открывается ссылкой на #callback-modal (псевдокласс :target),
+       закрывается ссылкой на несуществующий якорь #close — без JavaScript -->
+  <div class="modal" id="callback-modal" role="dialog" aria-modal="true" aria-labelledby="callback-title">
+    <a class="modal__overlay" href="#close" tabindex="-1" aria-hidden="true" data-modal-close></a>
+    <div class="modal__window">
+      <a class="modal__close" href="#close" aria-label="Закрыть окно" data-modal-close>&times;</a>
+      <h2 class="modal__title" id="callback-title">Заказать звонок</h2>
+      <p class="modal__text">Оставьте номер — перезвоним в течение 10 минут и поможем подобрать пульсометр.</p>
+      <form class="form form--compact" action="thanks.html" method="get">
+        <div class="form__grid">
+          <div class="form__field">
+            <label class="form__label" for="callback-name">Имя <abbr class="form__required" title="обязательное поле">*</abbr></label>
+            <input class="form__input" id="callback-name" name="name" type="text" autocomplete="name" minlength="2" required placeholder="Как к вам обращаться">
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="callback-phone">Телефон <abbr class="form__required" title="обязательное поле">*</abbr></label>
+            <input class="form__input" id="callback-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9 +\(\)\-]{10,18}" required placeholder="+7 (999) 123-45-67" aria-describedby="callback-phone-error">
+            <p class="form__error" id="callback-phone-error">Введите номер из 10–18 цифр</p>
+          </div>
+        </div>
+        <label class="form__checkbox-label">
+          <input class="form__checkbox" name="agree" type="checkbox" required>
+          Согласен на обработку персональных данных
+        </label>
+        <button class="button button--block" type="submit">Жду звонка</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
